@@ -9,6 +9,7 @@
   "version": "1.0.0",
   "description": "art ecommerce page",
   "main": "server.js",
+  "type": "module",
   "devDependencies": {
     "concurrently": "^7.6.0",
     "nodemon": "^2.0.20"

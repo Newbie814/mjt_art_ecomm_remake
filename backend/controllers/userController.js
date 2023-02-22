@@ -24,4 +24,26 @@ const authUser = asyncHandler(async (req, res) => {
   }
 });
 
-export { authUser };
+// @desc    Get user profile
+// @route   GET /api/users/profile
+// @access  Private
+const getUserProfile = asyncHandler(async (req, res) => {
+  res.send('Success');
+
+  // const user = await User.findById({ _id: req.user._id });
+
+  // if (user && (await user.matchPassword(password))) {
+  //   res.json({
+  //     _id: user._id,
+  //     name: user.name,
+  //     email: user.email,
+  //     isAdmin: user.isAdmin,
+  //     token: generateToken(user._id),
+  //   });
+  // } else {
+  //   res.status(401);
+  //   throw new Error('Invalid email or password');
+  // }
+});
+
+export { authUser, getUserProfile };

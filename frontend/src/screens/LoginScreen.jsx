@@ -23,7 +23,6 @@ const LoginScreen = () => {
 
   // to prevent redirect to login screen if user is already logged in
   useEffect(() => {
-    console.log(redirect);
     if (userInfo) {
       navigate(redirect);
     }
